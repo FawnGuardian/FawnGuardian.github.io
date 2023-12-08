@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Kalibers;
+    src: url(../font/kalibers.ttf);
+    font-weight: 100;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    color:white;
+    text-align: center;
+    margin: 20px;
+}
+
+.background {
+    background-color: #2a293a;
+}
+
+h1 {
+    color: white;
+    font-family: Kalibers;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+a {
+    color:white;
+}
+a:hover {
+    color: lightblue;
+}
+a:active {
+    color: blueviolet;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    background-color: #9cff00;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #2a293a;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #191728;
+    position: relative;
+    margin: 5px;
+    min-width: 300px;
+}
+
+button:hover {
+    border-color: white;
+    border-width: 2px;
+    top:0px;
+}
+
+button:active {
+    background-color: #74b904;
+}@charset "utf-8";
+/* CSS Document */
+
