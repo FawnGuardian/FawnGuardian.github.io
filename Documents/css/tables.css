@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+table {
+    margin: auto;
+    border-radius: 7px;
+    border-collapse: collapse;
+    max-width: 100%;
+}
+tr {
+    background-color: #424c6e;
+}
+tr:nth-child(odd){
+    background-color: #363d5e;
+}
+#trHead {
+    background-color: #9cff00;
+    border-bottom-color: rgb(31, 59, 23);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+th {
+    background-color: inherit;
+    height: 45px;
+    padding: 5px;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    color: #101f1f;
+    border-top-color: inherit;
+}
+td {
+    height: 25px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+}
+#firstTh {
+    text-align: center;
+    border-radius: 8px 0px 0px 0px;
+}
+#lastTh {
+    border-radius: 0px 8px 0px 0px;
+}
+#wonTh {
+    border-radius: 0px 8px 0px 0px;
+    text-align: center;
+
+}
+
+#jam {
+    min-width: 100px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+#name {
+    min-width: 200px;
+}
+#name2 {
+    min-width: 200px;
+    text-align: right;
+}
+
+#game {
+    min-width: 200px;
+}
+
+#theme {
+    min-width: 200px;
+}
+
+#wins {
+    min-width: 100px;
+    text-align: center;
+}
