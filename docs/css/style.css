@@ -25,6 +25,14 @@ h1 {
     font-size: 45px;
 }
 
+h2 {
+    color: white;
+    font-family: Kalibers;
+    font-weight: 100;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
 a {
     color:white;
 }

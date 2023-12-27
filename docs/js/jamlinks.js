@@ -22,7 +22,7 @@ const MonthsEnum = (function () {
     }; 
 })(); 
 
-function GetJamaJamDate(offset=0){    
+function GetJamaJamDate(offset=0, url=false){    
     const dateStart = Date.UTC(2023, 7, 1);
     const dateNow = Date.now();
     
@@ -42,13 +42,16 @@ function GetJamaJamDate(offset=0){
     //get year from the number of jams
     var year = new Date().getFullYear() - (Math.floor(numberOfJams/12));
     
-    var date = month + "-" + year;
+    if(url === true)
+        var date = month + "-" + year;
+    else
+        date = month.toUpperCase() + " " + year;
     return(date);
 }
 
 
 function OpenJamLink(offset=0){
-    const link = "https://itch.io/jam/jama-jam-"+(GetJamaJamDate());
+    const link = "https://itch.io/jam/jama-jam-"+(GetJamaJamDate(offset, true));
     window.open(link);
 }
 
