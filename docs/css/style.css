@@ -2,8 +2,8 @@
 /* CSS Document */
 
 @font-face {
-    font-family: "Brady Bunch";
-    src: url(../font/BradBunR.ttf);
+    font-family: Kalibers;
+    src: url("../font/kalibers.ttf");
     font-weight: 100;
 }
 
@@ -20,15 +20,15 @@ body {
 
 h1 {
     color: #F3ECC4;
-    -webkit-text-stroke: 5px #98311f;
-    font-family: "Brady Bunch";
+    -webkit-text-stroke: #98311f;
+    font-family: Kalibers;
     font-weight: 100;
     font-size: 45px;
 }
 
 h2 {
     color: #F3ECC4;
-    font-family: "Brady Bunch";
+    font-family: BradBunR;
     font-weight: 100;
     font-size: 35px;
     text-decoration: underline;
