@@ -2,31 +2,32 @@
 /* CSS Document */
 
 @font-face {
-    font-family: Kalibers;
-    src: url(../font/kalibers.ttf);
+    font-family: "Brady Bunch";
+    src: url(../font/BradBunR.ttf);
     font-weight: 100;
 }
 
 body {
     font-family: sans-serif, Arial, Helvetica;
-    color:white;
+    color:#3d2525;
     text-align: center;
     margin: 20px;
 }
 
 .background {
-    background-color: #2a293a;
+    background-color: #ed9494;
 }
 
 h1 {
-    color: white;
+    color: #F3ECC4;
+    -webkit-text-stroke: 5px #98311f;
     font-family: Kalibers;
     font-weight: 100;
     font-size: 45px;
 }
 
 h2 {
-    color: white;
+    color: #F3ECC4;
     font-family: Kalibers;
     font-weight: 100;
     font-size: 35px;
@@ -34,13 +35,13 @@ h2 {
 }
 
 a {
-    color:white;
+    color: #3d2525;
 }
 a:hover {
-    color: lightblue;
+    color: #A35A5A;
 }
 a:active {
-    color: blueviolet;
+    color: black;
 }
 
 p {
@@ -48,26 +49,26 @@ p {
 }
 
 button {
-    background-color: #9cff00;
+    background-color: #E56367;
     border-radius: 5px;
     border-width: 2px;
     border-color: #2a293a;
     padding: 10px 25px;
     font-weight: 600;
     font-size: 24px;
-    color: #191728;
+    color: #F3ECC4;
     position: relative;
     margin: 5px;
     min-width: 300px;
 }
 
 button:hover {
-    border-color: white;
+    border-color: #F3ECC4;
     border-width: 2px;
     top:0px;
 }
 
 button:active {
-    background-color: #74b904;
+    background-color: #F34141;
 }
 

@@ -78,6 +78,7 @@ function LoadDataToTable(data) {
                         a.target = "_blank";
                         a.href = link;
                         a.innerHTML = userName;
+                        a.className = "link";
                         td.append(a);
                         if (splitU.length > 0) {
                             td.innerHTML += " ";

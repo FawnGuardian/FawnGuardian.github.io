@@ -69,6 +69,7 @@ function LoadDataToTable(data) {
                         let a = document.createElement("a");
                         a.href = link;
                         a.innerHTML = userName;
+                        a.className = "link";
                         td.append(a);
                         if (splitU.length > 0) {
                             td.innerHTML += " ";
