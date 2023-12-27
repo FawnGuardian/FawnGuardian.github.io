@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 @font-face {
     font-family: Kalibers;
     src: url(../font/kalibers.ttf);
@@ -58,6 +61,5 @@ button:hover {
 
 button:active {
     background-color: #74b904;
-}@charset "utf-8";
-/* CSS Document */
+}
 
