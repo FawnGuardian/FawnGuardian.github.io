@@ -1,30 +1,54 @@
 // JavaScript Document
-function JamaJamNumber() {
-    const week = 7;
-    const dayoffset = 2; // Offsets days froward
-    const weekoffset = 9 * week; // Offsets X weeks from first jam week
-    // Tuesday of the first week of Trijam #1
-    const dateStart = Date.UTC(2019, 0, 1 + weekoffset + dayoffset);
-    const dateNow = Date.now();
-    const dif = dateNow - dateStart;
-    const calc = ((((dif / 1000) / 60) / 60) / 24) / 7;
-    return Math.ceil(calc);
-}
 
-function JamaJamDate(){
-    const week = 7;
-    const dayoffset = 1; // Offsets days forward
-    const weekoffset = 10 * week; // Offsets X weeks from first jam week 
-    const dateStart = Date.UTC(2023, 5, 1 + weekoffset + dayoffset);
+const MonthsEnum = (function () { 
+    const months = { 
+        0: "january", 
+        1: "february", 
+        2: "march", 
+        3: "april", 
+        4: "may", 
+        5: "june", 
+        6: "july",
+        7: "august",
+        8: "september",
+        9: "october",
+        10: "november",
+        11: "december"
+    }; 
+    return { 
+        get: function (name) { 
+            return months[name]; 
+        } 
+    }; 
+})(); 
+
+function GetJamaJamDate(offset=0){    
+    const dateStart = Date.UTC(2023, 7, 1);
     const dateNow = Date.now();
+    
+    //Get number of jams that have happened fromt eh requested now date
     const dif = dateNow - dateStart;
-    const calc = ((((dif / 1000) / 60) / 60) / 24) / 7;
-    return Math.ceil(calc);
+    const calc = ((((dif / 1000) / 60) / 60) / 24) / 30;
+    var numberOfJams = Math.ceil(calc);
+    
+    //offset number of jams
+    numberOfJams += offset;
+    if (offset == 0)
+        numberOfJams = 0;
+    
+    //get month from the number of jams
+    var month = MonthsEnum.get (new Date().getMonth() - (numberOfJams));
+    
+    //get year from the number of jams
+    var year = new Date().getFullYear() - (Math.floor(numberOfJams/12));
+    
+    var date = month + "-" + year;
+    return(date);
 }
 
 
 function OpenJamLink(offset=0){
-    const link = "https://itch.io/jam/jama-jam-"+(JammaJamDate());
+    const link = "https://itch.io/jam/jama-jam-"+(GetJamaJamDate());
     window.open(link);
 }
 
