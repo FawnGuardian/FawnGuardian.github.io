@@ -30,12 +30,9 @@ function GetJamaJamDate(offset=0, url=false){
     const dif = dateNow - dateStart;
     const calc = ((((dif / 1000) / 60) / 60) / 24) / 30;
     var numberOfJams = Math.ceil(calc);
-    
-    //offset number of jams
+
     //offset number of jams
     numberOfJams += offset;
-    if (offset == 0)
-        numberOfJams = 0;
     
     //get month from the number of jams
     var currMonth = new Date().getMonth();
