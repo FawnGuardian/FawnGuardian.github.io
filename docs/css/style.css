@@ -1,12 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face {
-    font-family: Kalibers;
-    src: url("../font/kalibers.ttf");
-    font-weight: 100;
-}
-
 body {
     font-family: sans-serif, Arial, Helvetica;
     color:#3d2525;
@@ -20,17 +14,18 @@ body {
 
 h1 {
     color: #F3ECC4;
-    -webkit-text-stroke: #98311f;
-    font-family: Kalibers;
+    -webkit-text-stroke: 4px #98311f;
+    font-family: "Brady Bunch Remastered";
     font-weight: 100;
-    font-size: 45px;
+    font-size: 90px;
 }
 
 h2 {
     color: #F3ECC4;
-    font-family: BradBunR;
+    -webkit-text-stroke: 2px #98311f;
+    font-family: "Brady Bunch Remastered";
     font-weight: 100;
-    font-size: 35px;
+    font-size: 50px;
     text-decoration: underline;
 }
 
@@ -69,6 +64,6 @@ button:hover {
 }
 
 button:active {
-    background-color: #F34141;
+    background-color: #F35050;
 }
 
