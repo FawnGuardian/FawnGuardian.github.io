@@ -40,7 +40,7 @@ function GetJamaJamDate(offset=0, url=false){
     
     //get year from the number of jams
     var monthOffset = (currMonth + offset);
-    var yearOffset = 12/12;
+    var yearOffset = monthOffset/12;
     if(yearOffset%1 === 0)
         yearOffset -= 1;
     var year =new Date().getFullYear() + (Math.floor(yearOffset));
