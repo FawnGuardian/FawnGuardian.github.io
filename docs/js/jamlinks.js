@@ -32,15 +32,21 @@ function GetJamaJamDate(offset=0, url=false){
     var numberOfJams = Math.ceil(calc);
     
     //offset number of jams
+    //offset number of jams
     numberOfJams += offset;
     if (offset == 0)
         numberOfJams = 0;
     
     //get month from the number of jams
-    var month = MonthsEnum.get (new Date().getMonth() - (numberOfJams));
+    var currMonth = new Date().getMonth();
+    var month = MonthsEnum.get ((currMonth + offset)%12);
     
     //get year from the number of jams
-    var year = new Date().getFullYear() - (Math.floor(numberOfJams/12));
+    var monthOffset = (currMonth + offset);
+    var yearOffset = 12/12;
+    if(yearOffset%1 === 0)
+        yearOffset -= 1;
+    var year =new Date().getFullYear() + (Math.floor(yearOffset));
     
     if(url === true)
         var date = month + "-" + year;
