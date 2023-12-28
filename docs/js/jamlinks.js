@@ -39,7 +39,7 @@ function GetJamaJamDate(offset=0, url=false){
     var month = MonthsEnum.get ((currMonth + offset)%12);
     
     //get year from the number of jams
-    var monthOffset = (currMonth + offset);
+    var monthOffset = (currMonth + 1 + offset);
     var yearOffset = monthOffset/12;
     if(yearOffset%1 === 0)
         yearOffset -= 1;
